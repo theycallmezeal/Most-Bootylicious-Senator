@@ -1,0 +1,9 @@
+<h1>Add a senator</h1>
+<%= form_for(@senator, url: {action: "create"}) do |f| %>
+	<p>Name <%= f.text_field :name %></p>
+	<p>Score <%= f.text_field :score %></p>
+	<p>Gender <%= f.text_field :gender %></p>
+	<p>State <%= f.text_field :state %></p>
+	<p>Party <%= f.text_field :party %></p>
+	<p><%= f.submit "Create!"%></p>
+<% end %>

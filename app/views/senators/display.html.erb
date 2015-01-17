@@ -1,0 +1,29 @@
+<h1>Asstastic Statistics</h1>
+
+<p>The Senate's women average <%= @favg %> points!</p>
+<p>The Senate's men average <%= @mavg %> points!</p>
+<p>The Senate's Democrats average <%= @demavg %> points!</p>
+<p>The Senate's Republicans average <%= @repavg %> points!</p>
+
+<table>
+	<thead> <tr>
+		<th>Name</th>
+		<th>Portrait</th>
+		<th>Badonkadonk<br>Points</th>
+		<th>Gender</th>
+		<th>State</th>
+		<th>Party</th>
+	</tr> </thead>
+	<tbody>
+		<% Senator.find_each do |senator| %>
+			<tr>
+				<td><%=senator.name%></td>
+				<td><img alt="<%=senator.name%>" src="/portraits/<%=senator.name%>.png"></td>
+				<td><%=senator.score%></td>
+				<td class="<%=senator.gender%>"><%=senator.gender%></td>
+				<td><%=senator.state%></td>
+				<td class="<%=senator.party%>"><%=senator.party%></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

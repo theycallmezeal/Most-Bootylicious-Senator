@@ -1,0 +1,9 @@
+<h1>Most Bootylicious Senator <%= @winner %></h1>
+<p><%= @random_1.name %> - vs - <%= @random_2.name %></p>
+<p>
+	<%= link_to image_tag(@random_1.name + ".png"),
+		:controller => "senators", :action => "vote", :winner => @random_1, :loser => @random_2 %>
+	<%= link_to image_tag(@random_2.name + ".png"),
+		:controller => "senators", :action => "vote", :winner => @random_2, :loser => @random_1 %>
+	</p>
+<p><%= link_to 'It\'s a tie!', :controller => "senators", :action => "vote", :winner => nil, :loser => nil %></p>

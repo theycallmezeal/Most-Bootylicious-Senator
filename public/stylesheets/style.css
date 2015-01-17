@@ -1,0 +1,24 @@
+table img {
+	width: 100px;
+}
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+td.Male {
+	background-color: blue;
+}
+
+td.Female {
+	background-color: red;
+}
+
+td.Democratic {
+	background-color: blue;
+}
+
+td.Republican {
+	background-color: red;
+}
