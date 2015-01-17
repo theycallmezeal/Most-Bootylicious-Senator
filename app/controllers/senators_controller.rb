@@ -41,6 +41,7 @@ class SenatorsController < ApplicationController
 		mscore = 0.0;
 		
 		Senator.find_each do |senator|
+		
 			if senator.party == "Democratic"
 				demcount += 1;
 				demscore += senator.score;
