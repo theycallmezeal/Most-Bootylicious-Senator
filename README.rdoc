@@ -1,7 +1,7 @@
 == README, YOU TWIT!
 
-This is just a silly little project I made to teach myself the ins and outs of Rails. It uses Rails 4.1.4, and should be fairly straightforward and probably full of bad practices. This could be very easily adapted for more... *traditional* hot-or-not-style websites with different data.
+This is just a silly little project I made to teach myself the ins and outs of Rails. It uses Rails 4.1.4, and should be fairly straightforward and probably full of bad practices. This could be very easily adapted for more traditional (heh) hot-or-not-style websites with different data.
 
 Senator portraits are from Wikipedia and should be in the public domain.
 
-Y'know... when you register for hackathons and events they make you give your Github account... won't this look just *dandy?*
+Y'know... when you register for hackathons and events they make you give your Github account... won't this look just dandy?
