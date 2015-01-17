@@ -1,28 +1,7 @@
-== README
+== README, YOU TWIT!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is just a silly little project I made to teach myself the ins and outs of Rails. It uses Rails 4.1.4, and should be fairly straightforward and probably full of bad practices. This could be very easily adapted for more... *traditional* hot-or-not-style websites with different data.
 
-Things you may want to cover:
+Senator portraits are from Wikipedia and should be in the public domain.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Y'know... when you register for hackathons and events they make you give your Github account... won't this look just *dandy?*
