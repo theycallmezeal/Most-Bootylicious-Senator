@@ -18,7 +18,7 @@
 		<% Senator.find_each do |senator| %>
 			<tr>
 				<td><%=senator.name%></td>
-				<td><img alt="<%=senator.name%>" src="/portraits/<%=senator.name%>.png"></td>
+				<td><img alt="<%=senator.name%>" src="/images/<%=senator.name%>.png"></td>
 				<td><%=senator.score%></td>
 				<td class="<%=senator.gender%>"><%=senator.gender%></td>
 				<td><%=senator.state%></td>

@@ -1,24 +1,103 @@
-table img {
-	width: 100px;
+html {
+	padding: 0px;
+	margin: 0px;
 }
 
 body {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	
 	font-family: sans-serif;
+	
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Alpine_%284500224086%29.jpg/1920px-Alpine_%284500224086%29.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header {
 	text-align: center;
 }
 
-td.Male {
-	background-color: blue;
+nav {
+	box-shadow: 0px 0px 30px black;
 }
 
-td.Female {
-	background-color: red;
+nav ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+
+	background: #3388ff;
+	background: -moz-linear-gradient(top, #3388ff 0%, #2156a5 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #3388ff), color-stop(100%, #2156a5));
+	background: -webkit-linear-gradient(top, #3388ff 0%, #2156a5 100%);
+	background: -o-linear-gradient(top, #3388ff 0%, #2156a5 100%);
+	background: -ms-linear-gradient(top, #3388ff 0%, #2156a5 100%);
+	background: linear-gradient(to bottom, #3388ff 0%, #2156a5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3388ff', endColorstr='#2156a5', GradientType=0 );
+	
+	padding: 20px;
 }
 
-td.Democratic {
-	background-color: blue;
+nav ul li {
+	display: inline;
+	text-align: center;
+	border-right: 1px solid gray;
+	padding: 10px 40px;
 }
 
-td.Republican {
-	background-color: red;
+nav ul li a {
+	font-size: 200%;
+	font-weight: bold;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.4), 2px 2px rgba(255, 255, 255, 0.3), -1px -1px rgba(0, 0, 0, 0.5), -2px -2px rgba(0, 0, 0, 0.6);
+	color: white;
+	text-decoration: none;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+main {
+	height: 100%;
+	text-align: center;
+	padding: 30px;
+	background-color: #ecece2;
+	box-shadow: 0px 0px 30px black;
+}
+
+main h1 {
+	margin-top: 0px;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	color: #c72833;
+	border-bottom: 1px solid #c72833;
+}
+
+#versus {
+	font-weight: bold;
+}
+
+table img {
+	width: 100px;
+}
+td.Male, td.Democratic {
+	background-color: #2156a5;
+}
+
+td.Female, td.Republican {
+	background-color: #c72833;
 }
