@@ -1,5 +1,5 @@
 class SenatorsController < ApplicationController
-	def vote
+	def score
 		
 		if params["winner"] != nil
 			winner = Senator.find(params["winner"]);
@@ -11,14 +11,18 @@ class SenatorsController < ApplicationController
 			loser.save();
 		end
 		
-		@offset_1 = rand(Senator.count);
-		@offset_2 = rand(Senator.count);
-		while @offset_2 == @offset_1 do
-			@offset_2 = rand(Senator.count);
+		redirect_to "/vote"
+	end
+	
+	def vote
+		offset_1 = rand(Senator.count);
+		offset_2 = rand(Senator.count);
+		while offset_2 == offset_1 do
+			offset_2 = rand(Senator.count);
 		end
 		
-		@random_1 = Senator.offset(@offset_1).first;
-		@random_2 = Senator.offset(@offset_2).first;
+		@random_1 = Senator.offset(offset_1).first;
+		@random_2 = Senator.offset(offset_2).first;
 	end
 	
 	def new
