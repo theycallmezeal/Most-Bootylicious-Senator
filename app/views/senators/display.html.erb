@@ -15,7 +15,7 @@
 		<th>Party</th>
 	</tr> </thead>
 	<tbody>
-		<% Senator.each.order_by(:score).reverse do |senator| %>
+		<% Senator.each.order(:score).reverse do |senator| %>
 			<tr>
 				<td><%=senator.name%></td>
 				<td><img alt="<%=senator.name%>" src="/images/<%=senator.name%>.png"></td>
